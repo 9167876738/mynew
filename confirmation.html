@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .confirmation-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 80%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        h2 {
+            color: #2980b9;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="confirmation-container">
+        <h1>Student Registration Confirmation</h1>
+        <div>
+            <h2>Your Details:</h2>
+            <p><strong>Name:</strong> {{ student_details[1] }}</p>
+            <p><strong>Roll Number:</strong> {{ student_details[2] }}</p>
+            <!-- Add more fields as needed -->
+        </div>
+    </div>
+</body>
+</html>
